@@ -1,0 +1,17 @@
+{
+  "name": "micah-drew-ecommerce",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "1. Create Folder Structure\r    1. create root folder as Micah-Drew-Ecommerce\r    2. add frontend and backend folder\r    3. create src folder in frontend\r    4. create index.html with heading Micah D in root folder ~~src~~\r    5. run npm init in frontend folder\r    6. npm install ~~live-server~~ vite instead\r    7. add dev command as `\"dev\": \"vite\"` ~~start command as live-server src --verbose~~ \r    8. run npm dev ~~start~~\r    9. check result\r 2. Design Website\r    1. create styles.css in src folder\r    2. link styles.css to index.html\r    3. create div.grid-container\r    4. create header, main and footer\r    5. style html, body\r    6. style grid-container, header, main and footer\r 3. Create Static Home Screen\r    1. create ul.products\r    2. create li\r    3. create div.product\r    4. add .product-image, .product-name, .product-brand, .product-price\r    5. style ul.products and internal divs\r    6. duplicate 2 times to show 3 products\r 4. Render Dynamic Home Screen\r    1. create data.js\r    2. export an array of 6 products\r    3. create screens/HomeScreen.js\r    4. export HomeScreen as an object with render() method\r    5. implement render()\r    6. import data.js\r    7. return products mapped to lis inside an ul\r    8. create app.js\r    9. link it to index.html as module\r    10. set main id to main-container\r    11. create router() function\r    12. set main_container innerHTML to HomeScreen.render()\r    13. set load event of window to router() function\r 5. Build Url Router\r    1. create routes as route:screen object for home screen\r    2. create utils.js\r    3. export parseRequestURL()\r    4. set url as hash address split by slash\r    5. return resource, id and verb of url\r    6. update router()\r    7. set request as parseRequestURL()\r    8. build parsedUrl and compare with routes\r    9. if route exists render it, else render Error404\r    10. create screens/Error404.js and render error message\r 6. Create Node.JS Server\r    1. run npm init in root jsamazona folder\r    2. npm install express\r    3. create server.js\r    4. add start command as node backend/server.js\r    5. require express\r    6. move data.js from frontend to backend\r    7. create route for /api/products\r    8. return products in data.js\r    9. run npm start",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
