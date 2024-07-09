@@ -2,8 +2,15 @@ import data from '../../../backend/data.js'
 
 // create an object literal to render products dynamically
 const HomeScreen = {
-    render: () => {
-        const { products } = data;
+    render: async () => {
+        // const { products } = data;
+        //define ajax request
+        const response = await fetch('http://localhost:5000/api/products')
+        if (!response || !response.ok) {
+            return `<div>Error in getting data</div>`
+        }
+        const products = await response.json();
+
         return `
         <ul class="products">
             ${products.map( product => `
