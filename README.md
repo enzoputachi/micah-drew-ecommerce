@@ -12,3 +12,10 @@
    7. add dev command as `"dev": "vite"` ~~start command as live-server src --verbose~~ 
    8. run npm dev ~~start~~
    9. check result
+2. Design Website
+   1. create styles.css in src folder
+   2. link styles.css to index.html
+   3. create div.grid-container
+   4. create header, main and footer
+   5. style html, body
+   6. style grid-container, header, main and footer
