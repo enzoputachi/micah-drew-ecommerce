@@ -19,3 +19,8 @@
    4. create header, main and footer
    5. style html, body
    6. style grid-container, header, main and footer
+3. Create Static Home Screen
+   1. create ul.products
+   2. create li
+   3. create div.product
+   4. add .product-image, .product-name, .product-brand, .
