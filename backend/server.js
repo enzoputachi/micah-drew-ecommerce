@@ -2,7 +2,7 @@ import express from 'express'
 import products from './data.js';
 import cors from "cors" //to allow transfer of data
 
-const app = express();
+const app = express(); 
 
 app.use(cors());
 app.get('/api/products', (req, res) => {

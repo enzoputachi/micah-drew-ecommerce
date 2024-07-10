@@ -68,3 +68,15 @@
    4. make router() async and call await HomeScreen.render()
    5. use cors on backend 
    6. check the result
+8. Add Webpack
+   1. cd frontend
+   2. npm install --save-dev webpack webpack-cli webpack-dev-server
+   <!-- 3. npm uninstall live-server -->
+   4. "start": "webpack serve --open"
+   5. move index.html, style.css and images to frontend folder
+   6. rename app.js to index.js
+   7. update index.html
+   8. add script main.js before body tag
+   9. npm start
+   10. npm install axios
+   11. change fetch to axios in HomeScreen
