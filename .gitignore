@@ -4,3 +4,4 @@ package-lock.json
 vite.config.mjs
 webpack.config.json
 .env
+.eslintrc.js
