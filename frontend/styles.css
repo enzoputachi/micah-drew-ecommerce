@@ -3,17 +3,17 @@
 }
 
 html {
-    font-size: 62.5%; /* 16px * 62.5 = 1rem (set browser font size) */
+    font-size: 62.5%;
 }
 
 body {
     height: 100vh;
-    font: 1.6rem Helvetica;
+    font: 1.6rem Helvetica, Arial;
     margin: 0;
 }
 
 a {
-    color: #000;
+    color: black;
     text-decoration: none;
 }
 
@@ -39,17 +39,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 header a {
     color: #fff;
-    font-weight: none;
+    font-weight: bold;
     text-decoration: none;
 }
 
 header a:hover {
-    color: #f08040;
+    color: #f08030;
 }
 
 .brand a {
@@ -57,15 +57,14 @@ header a:hover {
 }
 
 footer {
-    grid-area: footer;
     background-color: #203040;
     display: flex;
+    color: #fff;
     justify-content: center;
     align-items: center;
-    color: #fff;
 }
 
-/* PRODUCTS ul */
+/* Products Styling */
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -87,13 +86,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     height: 100%;
 }
 
 .product img {
     max-height: 26rem;
-    max-height: 22rem;
+    max-width: 22rem;
     margin-top: 2rem;
 }
 
@@ -108,4 +106,15 @@ footer {
 
 .product-price {
     font-size: 2rem;
+}
+
+/* Rating */
+.rating {
+    color: #ffc000;
+    font-size: 2rem;
+}
+
+.rating span:last-child {
+    color: #444;
+    font-size: 1.4rem;
 }

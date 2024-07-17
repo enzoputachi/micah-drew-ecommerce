@@ -8,6 +8,7 @@ const HomeScreen = {
         const response = await axios ({
             url: 'http://localhost:5000/api/products',
         })
+        
         if (!response || response.statusText !== 'OK') {
             return `<div>Error in getting data</div>`
         }

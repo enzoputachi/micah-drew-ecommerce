@@ -16,7 +16,6 @@ export default {
     devServer: {
         static: {
             directory: path.resolve(__dirname, './'), 
-            compress: true,
         }
     }
 }
